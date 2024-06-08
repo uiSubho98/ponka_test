@@ -1,0 +1,34 @@
+{
+  "name": "ponka",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fontsource/poppins": "^5.0.14",
+    "@fontsource/roboto": "^5.0.13",
+    "@iconify/react": "^4.1.1",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/joy": "^5.0.0-beta.32",
+    "@mui/material": "^5.15.15",
+    "@next/font": "^14.2.3",
+    "@react-google-maps/api": "^2.19.3",
+    "iconify": "^1.4.0",
+    "next": "14.1.4",
+    "nodemailer": "^6.9.13",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-share": "^5.1.0",
+    "react-youtube": "^10.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4"
+  }
+}
