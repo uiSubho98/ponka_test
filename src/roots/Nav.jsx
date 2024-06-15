@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink,useLocation } from "react-router-dom";
 import Logo from "../assets/Mask group.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -11,19 +12,22 @@ const Nav = () => {
     { name: "Contact", link: "/contact" },
   ];
 
+  const location = useLocation();
+
   let [open, setOpen] = useState(false);
 
   return (
     <div className="shadow-md w-full fixed top-0 h-20">
       <div className="md:flex items-center justify-between bg-white h-full px-7 md:px-16">
+        <NavLink to="/">
         <div
           className="font-bold h-full text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800"
         >
-          <img src={Logo} alt="Logo" className="w-10 h-10 mr-2" />
+            <img src={Logo} alt="Logo" className="w-10 h-10 mr-2" />
           <span className="text-[#012F6B]">PONKA</span>
         </div>
-
+        </NavLink>
         <div
           onClick={() => setOpen(!open)}
           className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
@@ -38,14 +42,15 @@ const Nav = () => {
         >
           {Links.map((link) => (
             <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
-              <a
-                href={link.link}
+              <NavLink to ={link.link}
                 className={`duration-500 ${
-                  location.pathname === link.link ? "text-blue-500" : "text-gray-800 hover:text-gray-400"
+                  location.pathname === link.link
+                    ? "text-[#012F6B] font-semibold"
+                    : "text-black hover:text-gray-500"
                 }`}
               >
                 {link.name}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>

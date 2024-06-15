@@ -9,3 +9,12 @@
   background-repeat: no-repeat;
   height: 70vh;
 }
+
+
+.input-field {
+  color: black; /* Normal text color */
+}
+
+.input-field::placeholder {
+  color: #B6B6B6; /* Placeholder text color */
+}
