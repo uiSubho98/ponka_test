@@ -57,8 +57,8 @@ const Contact = () => {
      </div>
     </div>
 
-    <div className='my-8 relative h-full'>
-        <img src={mapImage} alt="ponka_contactUs" />
+    <div className='my-8 border-2 border-black relative h-full'>
+        <img src={mapImage} alt="ponka_contactUs" className="w-full" />
         <div className='absolute top-[40%] sm:top-[45%] sm:left-[45%] left-[28%] lg:left-[42%] md:left-[40%] rounded-md'>
     <div className='px-6 sm:px-8 lg:px-8 py-1 sm:py-1.5 lg:py-1 md:py-1 md:px-8 sm:bg-[#DAE8F0] bg-[#012F6B] rounded-sm sm:rounded-md '>
       <button className='text-[0.7rem] lg:text-[1rem] md:text-[0.75rem] rounded-md sm:text-[#012F6B] text-[#ffffff] font-semibold flex flex-row'>

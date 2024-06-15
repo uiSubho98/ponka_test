@@ -5,10 +5,10 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = () => {
   let Links = [
-    { name: "About", link: "/" },
-    { name: "Services", link: "/" },
-    { name: "Support", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: "About", link: "/about" },
+    { name: "Services", link: "/services" },
+    { name: "Support", link: "/support" },
+    { name: "Contact", link: "/contact" },
   ];
 
   let [open, setOpen] = useState(false);
@@ -40,7 +40,9 @@ const Nav = () => {
             <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
               <a
                 href={link.link}
-                className="text-gray-800 hover:text-gray-400 duration-500"
+                className={`duration-500 ${
+                  location.pathname === link.link ? "text-blue-500" : "text-gray-800 hover:text-gray-400"
+                }`}
               >
                 {link.name}
               </a>
