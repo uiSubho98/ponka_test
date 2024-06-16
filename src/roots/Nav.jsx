@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink,useLocation } from "react-router-dom";
-import Logo from "../assets/Mask group.png";
+import Logo from "../assets/NavLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
