@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html, body, #root {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
 .hero {
   background-image: url("./assets/hero.png");
   background-size: cover;

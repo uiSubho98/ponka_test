@@ -11,16 +11,20 @@ import Float from "./components/home/Float";
 function App() {
   return (
     <Router>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/support" element={<Support/>} />
-        <Route path="/service" element={<Service/>} />
-      </Routes>
-      <Float/>
-      <Footer/>
+      <div className="flex flex-col min-h-screen">
+        <Nav />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/support" element={<Support />} />
+            <Route path="/service" element={<Service />} />
+          </Routes>
+        </main>
+        <Float />
+        <Footer />
+      </div>
     </Router>
   );
 }
