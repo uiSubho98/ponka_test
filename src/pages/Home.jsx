@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div className="h-full w-[100%] mt-20">
             <Hero/>
-            <Float/>
+          
         </div>
     );
 };

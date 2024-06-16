@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Service from "./pages/Service";
 import Support from "./pages/Support";
 import Footer from "./components/home/Footer";
+import Float from "./components/home/Float";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/support" element={<Support/>} />
         <Route path="/service" element={<Service/>} />
       </Routes>
+      <Float/>
       <Footer/>
     </Router>
   );
