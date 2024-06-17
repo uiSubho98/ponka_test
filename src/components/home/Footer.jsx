@@ -64,7 +64,7 @@ function Footer() {
               <Link to="/about">About</Link>
             </p>
             <p className="font-poppins text-sm md:text-lg">
-              <Link to="/ourservices">Services</Link>
+              <Link to="/services">Services</Link>
             </p>
             <p className="font-poppins text-sm md:text-lg">
               <Link to="/contact">Contact</Link>
