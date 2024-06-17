@@ -23,7 +23,7 @@ const Nav = () => {
   }, [location.pathname]);
 
   return (
-    <div className="shadow-md w-full fixed top-0 h-20">
+    <div className="shadow-md w-full fixed top-0 h-20 z-40">
       <div className="md:flex items-center justify-between bg-white h-full px-7 md:px-16">
         <NavLink to="/">
           <div

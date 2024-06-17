@@ -66,7 +66,7 @@ function Footer() {
             <p className="font-poppins text-sm md:text-lg">
               <Link to="/services">Services</Link>
             </p>
-            <p className="font-poppins text-sm md:text-lg">
+            <p className="font-poppins text-sm md:text-lg"> cv     
               <Link to="/contact">Contact</Link>
             </p>
             <div className="flex justify-center mt-1 items-center">
