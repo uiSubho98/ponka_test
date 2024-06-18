@@ -6,10 +6,10 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = () => {
   let Links = [
-    { name: "About", link: "/about" },
-    { name: "Services", link: "/services" },
-    { name: "Support", link: "/support" },
-    { name: "Contact", link: "/contact" },
+    { name: "About Us", link: "/about" },
+    { name: "Our Services", link: "/services" },
+    { name: "Get Involved", link: "/support" },
+    { name: "Contact Us", link: "/contact" },
   ];
 
   const location = useLocation();

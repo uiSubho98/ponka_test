@@ -48,7 +48,7 @@ body {
   width: 80%;
 
   height: 100%;
-  background-image: url('./assets/bgDeiverse.png');
+  background-image: url("./assets/bgDeiverse.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,7 +82,7 @@ body {
   width: 80%;
   height: 100%;
 
-  background-image: url('./assets/bgDeiverse.png');
+  background-image: url("./assets/bgDeiverse.png");
   transform: scaleX(-1);
   background-size: contain;
   background-position: center;
@@ -108,39 +108,36 @@ body {
 }
 
 @media (max-width: 768px) {
-    .deverse::before {
-      width: 100%;
-    }
-    
-    .deverse::after {
-      width: 100%;
-   background-size: 100% 100%;
+  .deverse::before {
+    width: 100%;
+  }
 
-    }
-    
-    .deverseR::before {
-      width: 100%;
-    }
-    
-    .deverseR::after {
-      width: 180%;
-      background-size: 100% 100%;
-    }
- 
-}
+  .deverse::after {
+    width: 100%;
+    background-size: 100% 100%;
+  }
 
-@media only screen and (min-width:150px) and (max-width:1380px){
+  .deverseR::before {
+    width: 100%;
+  }
 
   .deverseR::after {
-    width: 95%;
- background-size: 100% 100%;
+    width: 180%;
+    background-size: 100% 100%;
+  }
+}
 
+@media only screen and (min-width: 150px) and (max-width: 1380px) {
+  .deverseR::after {
+    width: 95%;
+    background-size: 100% 100%;
   }
   .deverse::after {
     width: 95%;
- background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
 
+  .float {
+    top: 50%;
   }
-  
-  
-  }
+}
