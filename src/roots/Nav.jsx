@@ -32,7 +32,7 @@ const Nav = () => {
 
   return (
     <div className="shadow-md w-full fixed top-0 h-20 z-40">
-      <div className="md:flex items-center justify-between bg-white h-full px-7 md:px-16">
+      <div className="md:flex items-center justify-between bg-white h-full px-2 md:px-16">
         <NavLink to="/">
           <div
             className="font-bold h-full text-2xl cursor-pointer flex items-center font-[Poppins] overflow-hidden
