@@ -35,7 +35,7 @@ const Nav = () => {
       <div className="md:flex items-center justify-between bg-white h-full px-7 md:px-16">
         <NavLink to="/">
           <div
-            className="font-bold h-full text-2xl cursor-pointer flex items-center font-[Poppins] 
+            className="font-bold h-full text-2xl cursor-pointer flex items-center font-[Poppins] overflow-hidden
       text-gray-800"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -45,8 +45,9 @@ const Nav = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 version="1.2"
                 viewBox="0 0 3690 945"
-                width="250"
-                height="300"
+                width="100%" // Set width to 100% to fill the parent div
+                height="auto" // Automatically adjust height to maintain aspect ratio
+                style={{ maxWidth: "100%", maxHeight: "100%" }} // Ensure it doesn't overflow
               >
                 <title>RECT LOGO</title>
                 <defs>
@@ -73,8 +74,9 @@ const Nav = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 version="1.2"
                 viewBox="0 0 3690 945"
-               width="250"
-                height="300"
+                width="100%" // Set width to 100% to fill the parent div
+                height="auto" // Automatically adjust height to maintain aspect ratio
+                style={{ maxWidth: "100%", maxHeight: "100%" }} // Ensure it doesn't overflow
               >
                 <title>RECT LOGO</title>
                 <defs>
