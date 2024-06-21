@@ -131,19 +131,15 @@ const Contact = () => {
       </div>
 
       <div className="my-8 h-full">
-        <div
-          className="w-full sm:h-[20rem] h-[10rem] flex justify-center items-center"
-          style={{
-            backgroundImage: `url(${mapImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="px-6 sm:px-8 lg:px-8 py-1 sm:py-1.5 lg:py-1 md:py-1 md:px-8 sm:bg-[#DAE8F0] bg-[#012F6B] rounded-sm sm:rounded-md">
-            <button className="text-[1.0rem] lg:text-[1rem] md:text-[1.2rem] rounded-md sm:text-[#012F6B] text-[#ffffff] font-semibold flex flex-row">
-              Show <span className="block sm:hidden mx-1"> on </span> maps
-            </button>
-          </div>
+        <div className="w-full sm:h-[20rem] h-[10rem] flex justify-center items-center">
+          <iframe
+            width="100%"
+            height="100%"
+            frameBorder="0"
+            style={{ border: 0 }}
+            src="https://www.google.com/maps?q=Ponka,+5,+Sesay+Street,+Tulun+Road,+Lungi-Town,+Sierra+Leone&t=k&output=embed"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
       <ToastContainer />

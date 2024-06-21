@@ -1,11 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 html,
 body,
 #root {
   height: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Poppins', sans-serif;
 }
 body {
   display: flex;
@@ -21,6 +24,14 @@ body {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.video {
+  background-image: url("./assets/video.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
 }
 .deverse {
   position: relative;
@@ -108,6 +119,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .founder {
+    border: "1px solid red";
+  }
   .deverse::before {
     width: 100%;
   }
@@ -128,6 +142,9 @@ body {
 }
 
 @media only screen and (min-width: 150px) and (max-width: 1380px) {
+  .founder {
+    border: "1px solid red";
+  }
   .deverseR::after {
     width: 95%;
     background-size: 100% 100%;
@@ -136,6 +153,17 @@ body {
     width: 95%;
     background-size: 100% 100%;
   }
+}
+.third {
+  background-image: url("./assets/worker.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
 
- 
+@media (max-width: 768px) {
+  .third {
+    background-position: right;
+  }
 }
