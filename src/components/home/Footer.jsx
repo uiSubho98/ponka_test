@@ -24,19 +24,19 @@ function Footer() {
               Lungi, Sierra Leone
             </p>
             <Link to="mailto:sales@ponka.org">
-              <p className="font-poppins text-xs md:text-lg">sales@ponka.org</p>
+              <p className="font-poppins text-xs md:text-lg underline">sales@ponka.org</p>
             </Link>
           </div>
           {/* section-3 */}
 
           <div className="my-3 sm:block hidden text-center border-l border-gray-300">
-            <p className="font-poppins text-xs md:text-lg">
+            <p className="font-poppins text-xs md:text-lg underline">
               <Link to="/about">About</Link>
             </p>
-            <p className="font-poppins text-xs md:text-lg">
+            <p className="font-poppins text-xs md:text-lg underline">
               <Link to="/services">Services</Link>
             </p>
-            <p className="font-poppins text-xs md:text-lg">
+            <p className="font-poppins text-xs md:text-lg underline">
               <Link to="/contact">Contact</Link>
             </p>
             <div className="flex justify-center mt-1 items-center">

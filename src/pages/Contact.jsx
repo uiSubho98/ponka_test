@@ -64,7 +64,7 @@ const Contact = () => {
     <div className="lg:mt-[8rem] mt-[7rem] mx-[10%] sm:mx-[15%] flex-col justify-center sm:justify-start">
       <div className="mb-8 lg:text-center md:text-center sm:mb-12">
         <h1 className="text-[2rem] font-semibold md:text-[2rem] lg:text-[3rem] sm:text-[1.5rem] flex sm:flex-row sm:justify-center">
-          Contact <span className="hidden sm:block sm:mx-[1rem]"> Us </span>
+          Contact <span className=" ml-[0.5rem] sm:ml-[1rem]"> Us </span>
         </h1>
       </div>
       <div className="bg-[#FCF9F9] w-full h-full flex flex-col sm:flex-row py-1 sm:py-[5%] ring-1 ring-[#DAE8F0] rounded-md">

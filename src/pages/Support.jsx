@@ -3,10 +3,10 @@ import { FaTwitter } from "react-icons/fa";
 
 const Support = () => {
   return (
-    <div className="lg:mt-[8rem] mt-[7rem] sm:px-[10%] lg:px-[6%] md:[px-1%] px-[5%] sm:mx-[15%] lg:mx-[5%] md:mx-[1%] flex-col justify-center sm:justify-start  pb-10">
+    <div className="lg:mt-[8rem] mt-[7rem] sm:px-[10%]  lg:px-[6%] md:[px-1%] px-[10%] sm:mx-[15%] lg:mx-[5%] md:mx-[1%] flex-col justify-center sm:justify-start  pb-10">
       <div className="mb-8  lg:text-center md:text-center sm:mb-12 ">
         <h1 className="text-[2rem] font-semibold md:text-[2rem] lg:text-[3rem] sm:text-[1.5rem] flex sm:flex-row sm:justify-center">
-          Get <span className="sm:mx-[1rem]"> Involved </span>{" "}
+          Get <span className="sm:mx-[1rem] ml-[0.5rem]"> Involved </span>{" "}
         </h1>
         <p className="font-semibold sm:mt-1 mt-2 text-[1.15rem] lg:text-[1rem] md:text-[0.75rem] sm:text-[1rem]">
           We welcome your inquiries, contributions, and partnership
@@ -33,7 +33,7 @@ const Support = () => {
                 photos, and videos on your social media platforms.
               </p>
             </div>
-            <div className="w-full h-auto  flex justify-center gap-4 items-center">
+            <div className="w-full h-auto  md:flex-row  flex flex-col  justify-center gap-4 items-center">
               <button className="text-center text-[0.7rem] lg:text-[1rem] md:text-[0.7rem]  rounded-md bg-[#012F6B]  md:bg-[#DAE8F0] px-8 py-2 sm:text-[#012F6B] text-white font-semibold flex flex-row">
                 <span className="mx-1 flex items-center justify-evenly">
                   {" "}
