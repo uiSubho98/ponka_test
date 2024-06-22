@@ -164,7 +164,8 @@ body {
 
 @media (max-width: 768px) {
   .third {
+  background-image: url("./assets/choose.png");
     background-position: center;
-    background-size: auto;
+    background-size: cover;
   }
 }

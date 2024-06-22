@@ -1,13 +1,13 @@
 import bike from "../assets/motorbike.png";
-// import teacher from "../assets/teacher.png";
+import teacher from "../assets/teacher.png";
 
 const About = () => {
   return (
     <section className="lg:mt-[8rem] mt-[7rem] ">
-      <div className="first flex justify-center items-center w-full gap-0 md:gap-10">
-        <div className="w-[50%] ps-4 md:ps-4 lg:ps-0 md:w-[50%] ">
-          <h1 className="text-4xl md:text-6xl font-bold">Our Story</h1>
-          <h3 className="text-2xl md:text-3xl font-semibold mt-10 md:mt-10">
+      <div className="flex justify-evenly items-center  w-full gap-0 md:gap-10">
+        <div className="w-[50%]  ps-4 md:ps-4 lg:ps-0 md:w-[40%] ">
+          <h1 className="text-3xl md:text-6xl font-bold">Our Story</h1>
+          <h3 className="text-xl md:text-3xl font-semibold mt-2 md:mt-10">
             Born in a village, thriving globally. Empowering communities through
             opportunity.
           </h3>
@@ -28,7 +28,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="w-full h-fit mt-10 block border md:hidden px-4">
+      <div className="w-full h-fit mt-4 block  md:hidden px-4">
         <p className="">
           Ponka was founded in a village in the middle of a jungle in Sierra
           Leone in 2018 with the aim to increase the employment of the people in
@@ -41,10 +41,13 @@ const About = () => {
         </p>
       </div>
 
-      <div className="second flex flex-row-reverse justify-center items-center w-full gap-0 md:gap-10 mt-10 md:mb-0">
-        <div className="w-[50%] ps-4 md:ps-4 lg:ps-0 md:w-[50%]">
-          <h1 className="text-4xl md:text-6xl font-bold">How do we work?</h1>
-          <p className="mt-5 md:mt-10 border w-[100%] md:w-[70%] md:text-xl">
+      <div className="flex justify-evenly items-center  w-full gap-0 md:gap-10">
+        <div className="w-[50%]  ps-4 md:ps-4 lg:ps-0 md:w-[40%] ">
+          <img src={bike} alt="" className="" />
+        </div>
+        <div className="px-2 md:p-5 w-[50%] md:w-[566px]">
+        <h1 className="text-4xl md:text-6xl font-bold w-full  ">How do we work?</h1>
+          <p className="mt-2 md:mt-10  w-[100%] md:w-[100%] xl:w-[90%] md:text-xl lg:text-xl xl:text-2xl text-sm">
             Most tech companies need low-cost human intelligence services.
             Normally the companies have a few in-house people and in other cases
             they are using massive outsourcing companies costing them a lot.{" "}
@@ -59,13 +62,10 @@ const About = () => {
             </span>
           </p>
         </div>
-        <div className="pe-4 w-[50%] md:w-[566px]">
-          <img src={bike} alt="" className="" />
-        </div>
       </div>
 
-      <div className="w-full h-fit mt-5 block border md:hidden px-4 mb-10">
-        <p className="">
+      <div className="w-full h-fit mt-4 block  md:hidden px-4">
+      <p className="">
           Ponka offers better pricing, high quality work, and more than anything
           - the ability to help one of the poorest communities on earth. Ponka
           is proud to be the first tech company in Sierra Leone and as a social
@@ -76,16 +76,16 @@ const About = () => {
       </div>
 
       <div className="third ">
-        <div className="flex flex-col items-start pt-12 ">
-          <div className="w-[80%] mx-auto border mb-10">
-            <h1 className="text-2xl md:text-5xl font-semibold">
+        <div className="flex flex-col items-start pt-8  ">
+          <div className="w-[82%] mx-auto  md:mb-10 mb-5">
+            <h1 className="text-3xl md:text-5xl font-semibold">
               Why choose Ponka?
             </h1>
           </div>
 
           <div>
-            <div className="flex justify-center items-center w-[80%] mx-auto">
-              <p className="text-sm md:text-lg lg:text-xl">
+            <div className="flex justify-center items-center  w-[82%]  mx-auto">
+              <p className="text-md md:text-sm xl:text-2xl lg:text-xl">
                 Get a specialized team customized to your requirements, freeing
                 up your time to concentrate on core business functions. Enjoy
                 the adaptability to seamlessly adjust to evolving demands, with

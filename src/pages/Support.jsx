@@ -1,7 +1,27 @@
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { toast, ToastContainer } from "react-toastify";
 
 const Support = () => {
+  const currentUrl = window.location.href;
+
+  const handleFacebookShare = () => {
+    setTimeout(() => {
+      navigator.clipboard.writeText(currentUrl).then(() => {
+        window.open(`https://www.facebook.com`, "_blank");
+      });
+    }, 2000);
+    toast.success("URL Copied ");
+  };
+
+  const handleTwitterShare = () => {
+    setTimeout(() => {
+      navigator.clipboard.writeText(currentUrl).then(() => {
+        window.open(`https://twitter.com/`, "_blank");
+      });
+    }, 2000);
+    toast.success("URL Copied ");
+  };
   return (
     <div className="lg:mt-[8rem] mt-[7rem] sm:px-[10%]  lg:px-[6%] md:[px-1%] px-[10%] sm:mx-[15%] lg:mx-[5%] md:mx-[1%] flex-col justify-center sm:justify-start  pb-10">
       <div className="mb-8  lg:text-center md:text-center sm:mb-12 ">
@@ -33,23 +53,30 @@ const Support = () => {
                 photos, and videos on your social media platforms.
               </p>
             </div>
-            <div className="w-full h-auto  md:flex-row  flex flex-col  justify-center gap-4 items-center">
-              <button className="text-center text-[0.7rem] lg:text-[1rem] md:text-[0.7rem]  rounded-md bg-[#012F6B]  md:bg-[#DAE8F0] px-8 py-2 sm:text-[#012F6B] text-white font-semibold flex flex-row">
+            <div className="w-full h-auto    flex flex-col  justify-center gap-4 items-center">
+              <button
+                onClick={() => handleFacebookShare()}
+                className="text-center text-[0.7rem] lg:text-[1rem] md:text-[0.7rem]  rounded-md bg-[#012F6B]  md:bg-[#DAE8F0] px-8 py-2 sm:text-[#012F6B] text-white font-semibold flex flex-row"
+              >
                 <span className="mx-1 flex items-center justify-evenly">
                   {" "}
-                  <FaFacebook className="w-5 h-5 mr-2" /> Share on Link
+                  <FaFacebook className="w-6 h-5 mr-2" /> Share on Facebook
                 </span>
               </button>
-              <button className="text-center bg-[#012F6B]  md:bg-[#DAE8F0] px-8 py-2 text-[0.7rem] lg:text-[1rem] md:text-[0.7rem] ] rounded-md sm:text-[#012F6B] text-white font-semibold flex flex-row">
+              <button
+                onClick={() => handleTwitterShare()}
+                className="text-center bg-[#012F6B]  md:bg-[#DAE8F0] px-8 py-2 text-[0.7rem] lg:text-[1rem] md:text-[0.7rem] ] rounded-md sm:text-[#012F6B] text-white font-semibold flex flex-row"
+              >
                 <span className="mx-1 flex items-center justify-evenly">
                   {" "}
-                  <FaTwitter  className="w-5 h-5 mr-2" /> Share on Link
+                  <FaTwitter className="w-10 h-5 mr-2" /> Share on Twitter
                 </span>
               </button>
             </div>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
