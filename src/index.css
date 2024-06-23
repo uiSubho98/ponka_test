@@ -118,6 +118,28 @@ body {
   color: #b6b6b6; /* Placeholder text color */
 }
 
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  /* Adjust animation duration to suit your needs */
+}
+
+.carousel-slide {
+  flex: 0 0 var(--slide-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--slide-width) * var(--slide-count)));
+  }
+}
+
 @media (max-width: 768px) {
   .founder {
     border: "1px solid red";
