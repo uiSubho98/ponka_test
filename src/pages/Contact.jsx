@@ -66,7 +66,7 @@ const Contact = () => {
   return (
     <div className="lg:mt-[8rem] mt-[7rem] mx-[10%] sm:mx-[15%] flex-col justify-center sm:justify-start">
       <div className="mb-8 lg:text-center md:text-center sm:mb-12">
-        <h1 className="text-[2rem] font-semibold md:text-[2rem] lg:text-[3rem] sm:text-[1.5rem] flex sm:flex-row sm:justify-center">
+        <h1 className="text-[2rem]  font-semibold md:text-[2rem] lg:text-[3rem] sm:text-[1.5rem] flex sm:flex-row sm:justify-center">
           Contact <span className=" ml-[0.5rem] sm:ml-[1rem]"> Us </span>
         </h1>
       </div>

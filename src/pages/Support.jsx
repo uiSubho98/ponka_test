@@ -27,9 +27,9 @@ const Support = () => {
     toast.success("URL Copied ");
   };
   return (
-    <div className="lg:mt-[8rem] mt-[7rem] sm:px-[10%]  lg:px-[6%] md:[px-1%] px-[10%] sm:mx-[15%] lg:mx-[5%] md:mx-[1%] flex-col justify-center sm:justify-start  pb-10">
+    <div className="lg:mt-[8rem]  mt-[7rem] sm:px-[10%]  lg:px-[6%] md:[px-1%] px-[10%] sm:mx-[15%] lg:mx-[5%] md:mx-[1%] flex-col justify-center sm:justify-start  pb-10">
       <div className="mb-8  lg:text-center md:text-center sm:mb-12 ">
-        <h1 className="text-[2rem] font-semibold md:text-[2rem] lg:text-[3rem] sm:text-[1.5rem] flex sm:flex-row sm:justify-center">
+        <h1 className="text-[2rem]  font-semibold md:text-[2rem] lg:text-[3rem] sm:text-[1.5rem] h-fit flex sm:flex-row sm:justify-center">
           Get <span className="sm:mx-[1rem] ml-[0.5rem]"> Involved </span>{" "}
         </h1>
         <p className="font-semibold sm:mt-1 mt-2 text-[1.15rem] lg:text-[1rem] md:text-[0.75rem] sm:text-[1rem]">

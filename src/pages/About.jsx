@@ -10,7 +10,9 @@ const About = () => {
     <section className="lg:mt-[8rem] mt-[7rem] ">
       <div className="flex justify-evenly items-start  w-full gap-0 md:gap-10">
         <div className="w-[50%]  ps-4 md:ps-4 lg:ps-0 md:w-[40%] ">
-          <h1 className="text-3xl md:text-5xl font-bold">Our Story</h1>
+        <h1 className="text-[2rem] font-semibold md:text-[2rem] lg:text-[3rem] sm:text-[1.5rem] h-fit">
+          Our Story {" "}
+        </h1>
           <h3 className="text-xl md:text-3xl font-semibold mt-2 md:mt-10">
             Born in a village, thriving globally. Empowering communities through
             opportunity.
@@ -32,7 +34,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="w-full h-fit mt-4 block  md:hidden px-4">
+      <div className="w-full  h-fit mt-4 block  md:hidden px-4">
         <p className="">
           Ponka was founded in a village in the middle of a jungle in Sierra
           Leone in 2018 with the aim to increase the employment of the people in
@@ -45,9 +47,9 @@ const About = () => {
         </p>
       </div>
 
-      <div className="flex justify-evenly items-center  w-full gap-0 md:gap-10">
+      <div className="flex justify-evenly   mt-10 items-center  w-full gap-0 md:gap-10">
         <div className="w-[50%]  ps-4 md:ps-4 lg:ps-0 md:w-[40%] ">
-          <img src={bike} alt="" className="" />
+          <img src={teacher} alt="" className="" />
         </div>
         <div className="px-2 md:p-5 w-[50%] md:w-[566px]">
         <h1 className="text-4xl md:text-6xl font-bold w-full  ">How do we work?</h1>
@@ -79,7 +81,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="third ">
+      <div className="third mt-10  ">
         <div className="flex flex-col items-start pt-8  ">
           <div className="w-[82%] mx-auto  md:mb-10 mb-5">
             <h1 className="text-3xl md:text-5xl font-semibold">

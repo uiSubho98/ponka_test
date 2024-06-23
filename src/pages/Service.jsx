@@ -134,8 +134,10 @@ const Service = () => {
   return (
     <div className="lg:mt-[8rem] mt-[7rem] lg:px-24 px-10 pb-10">
       <section className="hidden lg:block">
-        <h1 className="text-center text-5xl font-bold mb-5">Our Services</h1>
-        <p className="text-2xl w-[90%]">
+      <h1 className="text-[2rem]  font-semibold md:text-[2rem] lg:text-[3rem] sm:text-[1.5rem] h-fit flex sm:flex-row sm:justify-center">
+          Our Services {" "}
+        </h1>
+        <p className="text-2xl  w-[100%] mt-4">
           Choose Ponka for exceptional service excellence and innovation-driven
           solutions. With a focus on client satisfaction and a track record of
           delivering results, Ponka is your trusted partner for all
@@ -170,7 +172,7 @@ const Service = () => {
           <h1 className="text-3xl lg:text-4xl font-bold mb-5 lg:w-[100%] xl:lg:w-[100%] md:lg:w-[100%] w-[70%]">
           Discover How We Empower Businesses
           </h1>
-          <p className="w-[80%] text-2xl">
+          <p className="w-[100%] text-2xl">
             Our business model is based on recurring business and referral
             business from our happy customers. We go that extra mile to ensure
             complete customer satisfaction.
