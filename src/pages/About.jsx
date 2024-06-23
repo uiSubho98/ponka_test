@@ -17,7 +17,7 @@ const About = () => {
             Born in a village, thriving globally. Empowering communities through
             opportunity.
           </h3>
-          <p className="mt-10 md:block hidden text-xl">
+          <p className="mt-10 md:block hidden text-2xl">
             Ponka was founded in a village in the middle of a jungle in Sierra
             Leone in 2018 with the aim to increase the employment of the people
             in the village and help better the living standards of the people of
@@ -52,7 +52,7 @@ const About = () => {
           <img src={teacher} alt="" className="" />
         </div>
         <div className="px-2 md:p-5 w-[50%] md:w-[566px]">
-        <h1 className="text-4xl md:text-6xl font-bold w-full  ">How do we work?</h1>
+        <h1 className="text-3xl md:text-[2rem] lg:text-[3rem] font-bold w-full  ">How do we work?</h1>
           <p className="mt-2 md:mt-10  w-[100%] md:w-[100%] xl:w-[90%] md:text-xl lg:text-xl xl:text-2xl text-sm">
             Most tech companies need low-cost human intelligence services.
             Normally the companies have a few in-house people and in other cases

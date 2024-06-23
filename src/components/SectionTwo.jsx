@@ -26,7 +26,7 @@ const SectionTwo = () => {
                 <h1 className="text-sm md:text-lg font-semibold">
                   {info.title}
                 </h1>
-                <p className="text-xs md:text-sm">
+                <p className="text-xs md:text-md">
                   {info.desc}
                 </p>
               </div>

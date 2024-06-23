@@ -169,7 +169,7 @@ const Service = () => {
 
       <section className="mt-20">
         <div>
-          <h1 className="text-3xl lg:text-4xl font-bold mb-5 lg:w-[100%] xl:lg:w-[100%] md:lg:w-[100%] w-[70%]">
+          <h1 className="text-3xl lg:text-4xl font-bold mb-5 lg:w-[100%] xl:lg:w-[100%] md:lg:w-[100%] w-[80%]">
           Discover How We Empower Businesses
           </h1>
           <p className="w-[100%] text-2xl">
