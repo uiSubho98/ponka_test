@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import bike from "../assets/motorbike.png";
 import teacher from "../assets/teacher.png";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="lg:mt-[8rem] mt-[7rem] ">
       <div className="flex justify-evenly items-center  w-full gap-0 md:gap-10">

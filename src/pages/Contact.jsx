@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import mapImage from "../assets/ponka_contactUs.png";
 import { ToastContainer, toast } from "react-toastify";
@@ -11,6 +11,9 @@ const Contact = () => {
     message: "",
   });
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({

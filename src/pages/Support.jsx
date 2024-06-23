@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
@@ -5,6 +6,9 @@ import { toast, ToastContainer } from "react-toastify";
 const Support = () => {
   const currentUrl = window.location.href;
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const handleFacebookShare = () => {
     setTimeout(() => {
       navigator.clipboard.writeText(currentUrl).then(() => {
