@@ -8,9 +8,9 @@ const About = () => {
   }, []);
   return (
     <section className="lg:mt-[8rem] mt-[7rem] ">
-      <div className="flex justify-evenly items-center  w-full gap-0 md:gap-10">
+      <div className="flex justify-evenly items-start  w-full gap-0 md:gap-10">
         <div className="w-[50%]  ps-4 md:ps-4 lg:ps-0 md:w-[40%] ">
-          <h1 className="text-3xl md:text-6xl font-bold">Our Story</h1>
+          <h1 className="text-3xl md:text-5xl font-bold">Our Story</h1>
           <h3 className="text-xl md:text-3xl font-semibold mt-2 md:mt-10">
             Born in a village, thriving globally. Empowering communities through
             opportunity.
