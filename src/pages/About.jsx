@@ -83,7 +83,7 @@ const About = () => {
 
       <div className="third mt-10  ">
         <div className="flex flex-col items-start pt-8  ">
-          <div className="w-[82%] mx-auto  md:mb-10 mb-5">
+          <div className="w-[82%] mx-auto  md:mb-5 mb-5">
             <h1 className="text-3xl md:text-5xl font-semibold">
               Why choose Ponka?
             </h1>
