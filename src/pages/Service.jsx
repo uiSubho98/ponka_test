@@ -196,7 +196,7 @@ const Service = () => {
         </section>
       </div>
 
-      <div className="carousel-container block md:hidden">
+      <div className="carousel-container block md:hidden overflow-hidden ">
         <div className="carousel-track" ref={carouselTrackRef}>
           {carousels.map((item, index) => (
             <div
