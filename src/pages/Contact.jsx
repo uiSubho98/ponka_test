@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import mapImage from "../assets/ponka_contactUs.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,25 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const reloaded = sessionStorage.getItem("reloaded");
+
+    if (reloaded) {
+      // This means the page has been reloaded
+      sessionStorage.removeItem("reloaded"); // Clear the flag after redirecting
+      navigate("/");
+    } else {
+      // Set the flag for page reload detection
+      sessionStorage.setItem("reloaded", "true");
+    }
+
+    // Cleanup: clear the flag when the component is unmounted
+    return () => {
+      sessionStorage.removeItem("reloaded");
+    };
+  }, [navigate]);
 
   useEffect(() => {
     window.scrollTo(0, 0);

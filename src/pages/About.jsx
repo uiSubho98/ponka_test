@@ -1,11 +1,32 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import bike from "../assets/motorbike.png";
 import teacher from "../assets/teacher.png";
 
 const About = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const reloaded = sessionStorage.getItem("reloaded");
+
+    if (reloaded) {
+      // This means the page has been reloaded
+      sessionStorage.removeItem("reloaded"); // Clear the flag after redirecting
+      navigate("/");
+    } else {
+      // Set the flag for page reload detection
+      sessionStorage.setItem("reloaded", "true");
+    }
+
+    // Cleanup: clear the flag when the component is unmounted
+    return () => {
+      sessionStorage.removeItem("reloaded");
+    };
+  }, [navigate]);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <section className="lg:mt-[8rem] mt-[7rem] ">
       <div className="flex justify-evenly items-start  w-full gap-0 md:gap-10">

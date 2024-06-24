@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Nav from "./roots/Nav";
 import Contact from "./pages/Contact";
@@ -19,7 +19,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/support" element={<Support />} />
-            <Route path="/services" element={<Service/>} />
+            <Route path="/services" element={<Service />} />
+            <Route path="*" element={<Navigate to="/" />} /> {/* Catch-all route */}
           </Routes>
         </main>
         <Float />

@@ -1,11 +1,31 @@
 import { useEffect } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 
 const Support = () => {
   const currentUrl = window.location.href;
 
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const reloaded = sessionStorage.getItem("reloaded");
+
+    if (reloaded) {
+      // This means the page has been reloaded
+      sessionStorage.removeItem("reloaded"); // Clear the flag after redirecting
+      navigate("/");
+    } else {
+      // Set the flag for page reload detection
+      sessionStorage.setItem("reloaded", "true");
+    }
+
+    // Cleanup: clear the flag when the component is unmounted
+    return () => {
+      sessionStorage.removeItem("reloaded");
+    };
+  }, [navigate]);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -51,7 +71,9 @@ const Support = () => {
         <div className="flex justify-center">
           <div className="text-center w-[30rem]  sm:mx-[24%]  py-[5%] text-[1rem] bg-[#FCF9F9] ring-1 ring-[#DAE8F0] rounded-md">
             <div className="px-[5%] mb-[10%] text-[0.75rem] md:text-[0.9rem] sm:text-[1rem] lg:text-[1rem]">
-              <h1 className="font-semibold mb-2 text-[0.75rem] lg:text-[1.2rem]">Spread the Word</h1>
+              <h1 className="font-semibold mb-2 text-[0.75rem] lg:text-[1.2rem]">
+                Spread the Word
+              </h1>
               <p>
                 Help us spread awareness by sharing our impactful stories,
                 photos, and videos on your social media platforms.

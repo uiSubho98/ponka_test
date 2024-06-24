@@ -27,9 +27,30 @@ import LeapEarner from "../assets/LeapEarner.png";
 import edesia from "../assets/edesia.png";
 import Fitcam from "../assets/Fitcam.png";
 import BiScience from "../assets/BiScience.png";
+import { useNavigate } from "react-router-dom";
 
 const Service = () => {
+
   const carouselTrackRef = useRef(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const reloaded = sessionStorage.getItem("reloaded");
+
+    if (reloaded) {
+      // This means the page has been reloaded
+      sessionStorage.removeItem("reloaded"); // Clear the flag after redirecting
+      navigate("/");
+    } else {
+      // Set the flag for page reload detection
+      sessionStorage.setItem("reloaded", "true");
+    }
+
+    // Cleanup: clear the flag when the component is unmounted
+    return () => {
+      sessionStorage.removeItem("reloaded");
+    };
+  }, [navigate]);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
